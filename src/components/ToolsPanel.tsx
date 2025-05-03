@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { 
-  Tool, Terminal, Network, Search, FileSearch, 
+  Wrench, Terminal, Network, Search, FileSearch, 
   Play, Square, AlertCircle, CheckCircle 
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -28,7 +27,7 @@ const ToolsPanel: React.FC<ToolsPanelProps> = ({ tools }) => {
       case 'code':
         return <Terminal className="w-4 h-4" />;
       default:
-        return <Tool className="w-4 h-4" />;
+        return <Wrench className="w-4 h-4" />;
     }
   };
 
@@ -66,7 +65,7 @@ const ToolsPanel: React.FC<ToolsPanelProps> = ({ tools }) => {
     <div className="cyber-card h-full">
       <div className="cyber-card-header">
         <div className="flex items-center space-x-2">
-          <Tool className="w-5 h-5 text-cyber-green" />
+          <Wrench className="w-5 h-5 text-cyber-green" />
           <h2 className="font-bold text-cyber-green">Penetration Testing Tools</h2>
         </div>
       </div>
